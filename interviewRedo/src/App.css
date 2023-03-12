@@ -1,0 +1,76 @@
+#root {
+  max-width: 100%;
+}
+
+
+* , *:before, *:after{ 
+  box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  -webkit-box-sizing:border-box; 
+  -ms-box-sizing:border-box;
+}
+
+
+.foodGallery {
+  margin-left: 10px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+.sectionTitle {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.itemSection {
+  font-weight: bold;
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;  /* Firefox */
+}
+
+.itemSection::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.itemCard {
+  width: 140px;
+}
+
+.itemCard:not(:first-child) {
+  margin-left: 10px;
+}
+
+.itemImage {
+  object-fit: cover;
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+}
+
+.itemTitle {
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.itemPrice {
+  font-weight: 400;
+  float: left;
+}
+
+.itemDescription {
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.itemId {
+  font-weight: 400;
+  float: right;
+}
